@@ -2,19 +2,19 @@ const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt'); 
+const bcrypt = require('bcrypt');
 
 
 const app = express();
 
 
 const corsOptions = {
-    origin: ['http://localhost:5713', 'http://localhost:5173', 'https://modern-notes-app-urwh.onrender.com'],
+    origin: ['http://localhost:5713', 'http://localhost:5173', 'https://modern-notes-app-urwh.onrender.com', 'https://modern-notes-app-urwh.onrender.com'],
     optionsSuccessStatus: 200
-  };
+};
 
 
-app.use(cors(corsOptions)); 
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 database_url = 'mongodb+srv://palindrajit10:BR7ebSUlu9i9UPUZ@cluster0.3kxj1mm.mongodb.net/'
@@ -38,7 +38,7 @@ const notesSchema = new mongoose.Schema({
     groups: [{
         name: { type: String, required: true },
         color: { type: String, required: true },
-        notes: { type: [String], default: [], timeStamps: true}
+        notes: { type: [String], default: [], timeStamps: true }
     }]
 });
 
