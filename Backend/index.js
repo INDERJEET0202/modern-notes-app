@@ -8,21 +8,15 @@ const bcrypt = require('bcrypt');
 const app = express();
 
 
-const corsOptions = {
-    origin: ['http://localhost:5713', 'http://localhost:5173', 'https://modern-notes-app-urwh.onrender.com', 'https://modern-notes-app-urwh.onrender.com/'],
-    optionsSuccessStatus: 200
-};
-
-
-app.use(cors(corsOptions));
+app.use(cors({ origin: 'https://modern-notes-app.vercel.app' }));
 app.use(bodyParser.json());
 
-app.use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', 'https://modern-notes-app.vercel.app');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-    next();
-});
+// app.use((req, res, next) => {
+//     res.setHeader('Access-Control-Allow-Origin', 'https://modern-notes-app.vercel.app');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+//     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
+//     next();
+// });
 
 database_url = 'mongodb+srv://palindrajit10:BR7ebSUlu9i9UPUZ@cluster0.3kxj1mm.mongodb.net/'
 mongoose.connect(database_url, {
