@@ -11,8 +11,7 @@ Users can easily sign up and start saving their notes. The app allows users to c
 Implemented with modern web technologies, the app ensures smooth performance and reliability. It leverages the latest frontend frameworks for an interactive user interface and a robust backend for efficient data management.
 
 ## Demo Video
-[![Demo video]](https://youtu.be/VFbl4noLB2U)
-
+https://youtu.be/VFbl4noLB2U
 
 ## Features
 
