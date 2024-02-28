@@ -1,0 +1,103 @@
+.main_content {
+  background-color: #dae5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+  background-color: #16008b;
+  text-wrap: nowrap;
+}
+
+.deleteBtn{
+  position: relative;
+}
+
+.heading_text {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 1.5rem 0 1.5rem 15px;
+  color: white;
+}
+
+.all_notes {
+  overflow-y: auto;
+  height: calc(100vh - 4rem - 14rem);
+  padding: 1rem;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.note{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 0.5rem 0;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 10px 10px 14px -12px rgba(0,0,0,0.75);
+    word-wrap: break-word;
+}
+
+.input_area {
+    display: grid;
+    grid-template-columns: 2fr .3fr;
+    gap: 30px;
+    align-items: center;
+    padding: 0.4rem;
+    background-color: #16008b;
+    border-radius: 0 0 10px 10px;
+    height: 10rem;
+  }
+  
+  .textBox {
+    width: 100%;
+    border: none;
+    resize: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin: .2rem 0 .2rem 1rem;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  
+  .submitButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049;
+  }
+
+  .error{
+    color: red;
+    font-size: 0.8rem;
+    margin: 0.2rem 0 0.2rem 1rem;
+  }
+
+  .deleteIcon{
+    width: 30px;
+    cursor: pointer;
+  }
+  

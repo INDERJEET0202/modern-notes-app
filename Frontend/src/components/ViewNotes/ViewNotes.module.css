@@ -1,0 +1,45 @@
+.viewNotes {
+  background-color: #dae5f5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_content {
+  text-align: center;
+  width: 60%;
+}
+
+.header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.image {
+  width: 100%;
+}
+
+.lock {
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_text {
+  font-size: 0.8rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  /* background-color: #dae5f5; */
+  box-sizing: border-box;
+  z-index: 1; 
+}
