@@ -156,7 +156,7 @@ const Note = () => {
               value={newNote}
               onChange={(e) => setNewNote(e.target.value)}
             />
-            <button className={styles.submitButton} onClick={handleAddNote}>
+            <button className={styles.submitButton} onClick={handleAddNote} disabled={!newNote.trim()}>
               Add Note
             </button>
             {addNoteError && <p className={styles.error}>{addNoteError}</p>}
