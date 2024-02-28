@@ -13,6 +13,11 @@ Implemented with modern web technologies, the app ensures smooth performance and
 ## Demo Video
 https://youtu.be/VFbl4noLB2U
 
+
+https://github.com/INDERJEET0202/modern-notes-app/assets/74589611/30f6e485-c8a8-4ce3-b7d2-8afd737f9031
+
+
+
 ## Features
 
 - **User-Friendly Interface**: Intuitive interface for easy note-taking and organization.
