@@ -19,7 +19,7 @@ const Sidebar = () => {
 
         const fetchNotes = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/get-groups`, {
+                const response = await fetch(`https://modern-notes-app-urwh.onrender.com//get-groups`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -86,7 +86,7 @@ const Sidebar = () => {
                     {showPopup && <AddNotesPopup onClose={() => setShowPopup(false)} />}
                 </div>
             )}
-            {clicked && <NotePhone onBackClick={handleBackClick}/>}
+            {clicked && <NotePhone onBackClick={handleBackClick} />}
         </>
     );
 };

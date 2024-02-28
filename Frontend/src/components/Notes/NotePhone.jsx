@@ -5,7 +5,7 @@ import ViewNotes from '../ViewNotes/ViewNotes';
 import DeleteIcon from '../../assets/bin.png';
 import BackImage from '../../assets/arrow.png';
 
-const Note = ({ onBackClick }) => { 
+const Note = ({ onBackClick }) => {
   const location = useLocation();
   const currentGroupId = location.state?.groupId || null;
   const [groupState, setGroupState] = useState({
@@ -21,7 +21,7 @@ const Note = ({ onBackClick }) => {
   const fetchGroupNotes = async (groupId) => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch(`http://localhost:3000/get-group-notes`, {
+      const response = await fetch(`https://modern-notes-app-urwh.onrender.com//get-group-notes`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const Note = ({ onBackClick }) => {
   const handleAddNote = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch('http://localhost:3000/add-note', {
+      const response = await fetch('https://modern-notes-app-urwh.onrender.com//add-note', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -87,7 +87,7 @@ const Note = ({ onBackClick }) => {
   const handleDeleteGroup = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch('http://localhost:3000/delete-group', {
+      const response = await fetch('https://modern-notes-app-urwh.onrender.com//delete-group', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

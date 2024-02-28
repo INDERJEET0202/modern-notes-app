@@ -7,7 +7,14 @@ const bcrypt = require('bcrypt');
 
 const app = express();
 
-app.use(cors());
+
+const corsOptions = {
+    origin: 'http://localhost:5713',
+    optionsSuccessStatus: 200 
+  };
+
+
+app.use(cors(corsOptions)); 
 app.use(bodyParser.json());
 
 database_url = 'mongodb+srv://palindrajit10:BR7ebSUlu9i9UPUZ@cluster0.3kxj1mm.mongodb.net/'

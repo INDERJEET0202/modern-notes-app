@@ -7,6 +7,11 @@ import SidebarPhone from '../../components/Sidebar/SidebarPhone';
 const NotesPage = () => {
   const [mobileView, setMobileView] = useState(false);
 
+  const userId = localStorage.getItem('userId');
+  if (!userId) {
+    window.location.href = '/signup';
+  }
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth <= 430) {

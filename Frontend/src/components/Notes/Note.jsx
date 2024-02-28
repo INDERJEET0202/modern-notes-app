@@ -20,7 +20,7 @@ const Note = () => {
   const fetchGroupNotes = async (groupId) => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch(`http://localhost:3000/get-group-notes`, {
+      const response = await fetch(`https://modern-notes-app-urwh.onrender.com//get-group-notes`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const Note = () => {
   const handleAddNote = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch('http://localhost:3000/add-note', {
+      const response = await fetch('https://modern-notes-app-urwh.onrender.com//add-note', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -86,7 +86,7 @@ const Note = () => {
   const handleDeleteGroup = async () => {
     try {
       const userId = localStorage.getItem('userId');
-      const response = await fetch('http://localhost:3000/delete-group', {
+      const response = await fetch('https://modern-notes-app-urwh.onrender.com//delete-group', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -109,7 +109,7 @@ const Note = () => {
       });
     }
   }
-  
+
 
   return (
     <>
@@ -140,7 +140,7 @@ const Note = () => {
                 </div>
               ))
             ) : (
-              <p style={{color: "#cd5d00"}}>No notes available 😢 Add your first note below</p>
+              <p style={{ color: "#cd5d00" }}>No notes available 😢 Add your first note below</p>
             )}
             {newNote && (
               <div className={styles.note}>

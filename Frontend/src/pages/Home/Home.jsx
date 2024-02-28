@@ -5,6 +5,10 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import Notes from "../../components/Notes/Note"
 
 const Home = () => {
+  const userId = localStorage.getItem('userId');
+  if (!userId) {
+    window.location.href = '/signup';
+  }
   return (
     <div className={styles.main_content}>
       <Sidebar/>

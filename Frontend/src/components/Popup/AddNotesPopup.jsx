@@ -32,8 +32,8 @@ const AddNotesPopup = ({ onClose }) => {
     const handleSubmit = async (event) => {
         event.preventDefault();
         const userId = localStorage.getItem('userId');
-        try{
-            const response = await axios.post("http://localhost:3000/create-group", {
+        try {
+            const response = await axios.post("https://modern-notes-app-urwh.onrender.com//create-group", {
                 userId: userId,
                 groupName: formData.groupName,
                 groupColor: formData.selectedColor
@@ -42,7 +42,7 @@ const AddNotesPopup = ({ onClose }) => {
             window.location.reload();
             onClose();
         }
-        catch(error){
+        catch (error) {
             console.error(error);
             alert('Error creating group');
         }
