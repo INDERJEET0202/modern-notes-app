@@ -9,8 +9,8 @@ const app = express();
 
 
 const corsOptions = {
-    origin: 'http://localhost:5713',
-    optionsSuccessStatus: 200 
+    origin: ['http://localhost:5713', 'http://localhost:5173', 'https://modern-notes-app-urwh.onrender.com'],
+    optionsSuccessStatus: 200
   };
 
 

@@ -9,7 +9,7 @@ const LoginForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://modern-notes-app-urwh.onrender.com//login', { username, password });
+            const response = await axios.post('https://modern-notes-app-urwh.onrender.com/login', { username, password });
             alert(response.data.message);
             console.log(response.data);
             localStorage.setItem('userId', response.data.id);

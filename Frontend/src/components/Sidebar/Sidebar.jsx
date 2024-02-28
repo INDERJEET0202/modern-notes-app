@@ -17,7 +17,7 @@ const Sidebar = () => {
 
         const fetchNotes = async () => {
             try {
-                const response = await fetch(`https://modern-notes-app-urwh.onrender.com//get-groups`, {
+                const response = await fetch(`https://modern-notes-app-urwh.onrender.com/get-groups`, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

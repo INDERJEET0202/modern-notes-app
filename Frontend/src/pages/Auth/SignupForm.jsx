@@ -9,7 +9,7 @@ const SignupForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://modern-notes-app-urwh.onrender.com//signup', { username, email, password });
+            await axios.post('https://modern-notes-app-urwh.onrender.com/signup', { username, email, password });
             alert('User created successfully');
         } catch (error) {
             console.error(error);

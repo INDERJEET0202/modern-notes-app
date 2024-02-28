@@ -33,7 +33,7 @@ const AddNotesPopup = ({ onClose }) => {
         event.preventDefault();
         const userId = localStorage.getItem('userId');
         try {
-            const response = await axios.post("https://modern-notes-app-urwh.onrender.com//create-group", {
+            const response = await axios.post("https://modern-notes-app-urwh.onrender.com/create-group", {
                 userId: userId,
                 groupName: formData.groupName,
                 groupColor: formData.selectedColor
