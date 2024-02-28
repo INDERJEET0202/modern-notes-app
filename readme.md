@@ -18,6 +18,15 @@ Implemented with modern web technologies, the app ensures smooth performance and
 - **Secure Authentication**: Although not focused on in this version, future iterations can implement secure authentication and user management features.
 - **Responsive Design**: Ensures compatibility across various devices for a seamless user experience.
 
+
+## Technologies Used
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+
+
 ## Getting Started
 
 To set up and run the application, follow these steps:
@@ -25,20 +34,17 @@ To set up and run the application, follow these steps:
 1. **Frontend Setup**:
 
    - Navigate to the `frontend` directory and run `npm install`.
-   - Run `npm start` to start the frontend server.
-   - Access the app at `http://localhost:8080/`.
+   - Run `npm run dev` to start the frontend server.
+   - Access the app at `http://localhost:5173/`.
 
 2. **Backend Setup**:
 
-    - Backend setup instructions would go here if applicable.
-    - For now, focus is on the frontend functionality.
+    - Navigate to the `backend` directory and run `npm install`.
+    - Run `npm start` to start the backend server.
+    - For now, I focus is on the frontend functionality.
 
 For detailed instructions, refer to the documentation or contact the project owner.
 
 ## Contributors
 
-- [Your Name]
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+- Indrajit Pal
